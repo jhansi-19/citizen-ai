@@ -1,0 +1,40 @@
+# ── Local development: docker compose up ──────────────────────────────────────
+# This runs the backend locally in a container.
+# The frontend (Next.js) is run separately with: npm run dev
+#
+# Usage:
+#   docker compose up --build        # first time
+#   docker compose up                # subsequent runs
+#   docker compose down              # stop
+#
+# The backend will be available at http://localhost:8000
+# Swagger UI at http://localhost:8000/docs
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: citizen-ai-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount data and chroma_db so they persist across container restarts
+      - ./data:/app/data
+      - ./backend/chroma_db:/app/chroma_db
+      - ./logs:/app/logs
+    env_file:
+      - .env              # reads your local .env file
+    environment:
+      - PORT=8000
+      - CHROMA_DB_PATH=/app/chroma_db
+      - PDF_DIR=/app/data/pdfs
+      - CHUNKS_DIR=/app/data/chunks
+      - LOGS_DB_PATH=/app/logs/citizen_ai.db
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped

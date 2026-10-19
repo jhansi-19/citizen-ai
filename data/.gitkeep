@@ -1,0 +1,3 @@
+# Placeholder — data directories are git-ignored but tracked via this file
+# PDFs go in: data/pdfs/<category>/<filename>.pdf
+# Processed chunks go in: data/chunks/<category>.jsonl

@@ -1,0 +1,79 @@
+name: CI — Lint & Test
+
+# Trigger: runs on every push and pull request to main
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend-test:
+    name: Backend (Python 3.10)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: "pip"
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install CPU-only PyTorch index first
+        # We install torch CPU build before the rest to avoid downloading the
+        # huge CUDA version (saves ~1.5 GB and ~3 minutes on free CI runners)
+        run: |
+          pip install torch==2.4.1+cpu torchvision==0.19.1+cpu \
+            --index-url https://download.pytorch.org/whl/cpu
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: |
+          pip install --upgrade pip
+          # Install everything except torch (already installed above)
+          grep -v "^torch" requirements.txt | pip install -r /dev/stdin
+
+      - name: Create .env for CI
+        # CI uses empty API keys — tests must not call real LLM APIs
+        run: |
+          cp .env.example .env
+          echo "GEMINI_API_KEY=ci-placeholder" >> .env
+          echo "LLM_PROVIDER=gemini" >> .env
+
+      - name: Lint with ruff
+        working-directory: backend
+        run: ruff check app/ tests/
+
+      - name: Run tests
+        working-directory: backend
+        run: pytest tests/ -v --tb=short
+
+  frontend-lint:
+    name: Frontend (Node 22)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        # Only run if frontend/package.json exists (added in Phase 9)
+        run: |
+          if [ -f "package.json" ]; then
+            npm ci
+            npm run lint
+          else
+            echo "Frontend not yet scaffolded — skipping"
+          fi

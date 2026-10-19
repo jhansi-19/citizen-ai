@@ -1,0 +1,73 @@
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+env/
+venv/
+.venv/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.cover
+.hypothesis/
+
+# ─── Secrets (NEVER commit these) ────────────────────────────────────────────
+.env
+*.env
+secrets.json
+
+# ─── Data & Models (too large for git) ───────────────────────────────────────
+data/pdfs/
+data/chunks/
+data/golden_set.jsonl
+data/finetune/
+backend/chroma_db/
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+models/
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+logs/
+*.log
+*.sqlite
+*.db
+
+# ─── Node / Next.js ───────────────────────────────────────────────────────────
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/.vercel/
+frontend/dist/
+.npm
+
+# ─── Docker ───────────────────────────────────────────────────────────────────
+.dockerignore
+
+# ─── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ─── IDEs ─────────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ─── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
