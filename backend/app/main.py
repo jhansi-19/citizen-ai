@@ -199,13 +199,10 @@ app = FastAPI(
 )
 
 # ── CORS ───────────────────────────────────────────────────────────────────────
-cors_origins = settings.cors_origins_list
-has_wildcard = "*" in cors_origins
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=cors_origins if not has_wildcard else ["*"],
-    allow_credentials=not has_wildcard,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

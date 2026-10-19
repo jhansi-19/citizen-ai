@@ -48,8 +48,8 @@ class Settings(BaseSettings):
     backend_host: str = Field(default="0.0.0.0")
     backend_port: int = Field(default=8000)
     cors_origins: str = Field(
-        default="http://localhost:3000,http://127.0.0.1:3000",
-        description="Comma-separated list of allowed CORS origins",
+        default="*",
+        description="Comma-separated list of allowed CORS origins or * for all",
     )
 
     @property

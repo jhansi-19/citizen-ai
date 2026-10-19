@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops! Error Encountered</title>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/MvcGrid/mvc-grid.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-table.min.css" rel="stylesheet" />
+    <link href="/Content/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="/Content/SiteNew.css" rel="stylesheet" />
+    <link href="/Content/font/OpenSans.css" rel="stylesheet" />
+    <link href="/Content/font/Merriweather.css" rel="stylesheet" />
+
+
+    
+
+    
+    <link rel="stylesheet" href="https://translation-plugin.bhashini.co.in/v3/website_translation_utility.css">
+</head>
+<body>
+
+    <section class="header">
+        <!-- News Ticker -->
+<section class="news-ticker d-flex">
+    <div class="w-100">
+        <div class="bg-ticker news-banner ">
+            <button class="btn btn-danger btn-sm fixed-button mt-1 ms-3 me-1 mb-1">Update</button>
+         <div class="scroll-container w-100">
+             <div class="text-dark scroll-text  mb-0" style="display:inline-block; white-space:nowrap; animation: scroll-left 26s linear infinite;">
+                 <!--Welcome to the Agri Infra Portal — Empowering farmers with infrastructure support under the Agriculture Infrastructure Fund.-->
+                 
+                 The Agriculture Infrastructure Fund (AIF) Scheme permits convergence with various Central and State Government schemes, including MIDH, PMFME, SMAM, GOBAR-Dhan, PMKSY, AMI, PACS as MSC, RKVY, PMEGP, and PM-KUSUM (Components A, B & C), for selected eligible projects/assets and beneficiaries as per the AIF Scheme Guidelines.
+             </div>
+ </div>
+        </div>
+    </div>
+</section>
+
+<!-- Header1 (Government Logo, Site Name, Language, Accessibility) -->
+<header class="header1 container-fluid d-flex flex-wrap justify-content-between my-2 px-3">
+
+    <div class="logo-and-site  d-flex flex-nowrap align-items-center justify-content-center  mb-2 mb-md-0">
+        <div class="d-flex px-1 ">
+            <img src="/Content/images/emblem.svg" alt="emblem" />
+            <div class="site ms-1 col-xl-12 px-1 px-xl-0">
+                <p class="mb-0 bhashini-skip-translation">भारत सरकार</p>
+                <p class="mb-0 goi bhashini-skip-translation">Government of India</p>
+            </div>
+        </div>
+        <div class="vertical-line d-none d-lg-block ms-xl-1 my-xxl-4"></div>
+        <div class="site ms-xl-2 ms-md-2">
+            <p class="mb-0 bhashini-skip-translation">कृषि एवं किसान कल्याण मंत्रालय</p>
+            <p class="mb-0 goi bhashini-skip-translation">Agricultural & Farmers Welfare Department</p>
+        </div>
+
+
+    </div>
+
+    <div class="other-options d-flex flex-row  align-items-center justify-content-stretch ">
+        <img class="me-1" src="/Content/images/azadi.svg" alt="" />
+        <a href="#maincontent" class="mb-0 me-1">Skip to main content</a>
+        <div class="d-flex flex-row text-nowrap">
+            <p id="decrease-font" class="a11y mb-0 me-1 p-1">-A</p>
+            <p id="reset-font" class="a11y mb-0 me-1 p-1">A</p>
+            <p id="increase-font" class="a11y mb-0 me-1 p-1">+A</p>
+        </div>
+        <div class="bhashini-plugin-container"></div>
+    </div>
+</header>
+
+<!-- Main Header (Site Logo, Name, Search, Publications Link, Login Popup) -->
+<header id="main-header" class="header2 d-flex ">
+    <div class="gif-aif row justify-content-between col-12">
+        <div class="left-side-header2 d-flex flex-row col-sm-8  col-lg-8 col-xl-6 ">
+            <img class="aif-logo" src="/Content/images/AIFRound_3yr.gif" alt="" />
+
+            <div class="aif-text text-center d-flex flex-column align-items-start justify-content-center">
+                <p class="mb-0 aif-text-eng text-uppercase bhashini-skip-translation">
+                    Agriculture Infrastructure Fund
+                </p>
+                <p class="mb-0 bhashini-skip-translation">कृषि अवसंरचना कोष</p>
+            </div>
+        </div>
+        <div class="right-side-header2 d-flex width-for-right-side  col-lg-4 flex-column align-items-end justify-content-center col-sm-4 col-xl-6 ">
+            <div class="aif-right-section search-wrapper position-relative custom-width search-input">
+                <input type="text"
+                       class=" form-control w-100 w-sm-25 w-md-50 w-lg-25  small border-info  rounded-pill pe-1"
+                       placeholder="Search" />
+                <i class="fa fa-search position-absolute text-dark small custom-center-vertical search-icon p-1 "></i>
+            </div>
+            <div class="monthly-publication-section d-flex my-2 me-2">
+                <a href="/Home/Publication">
+                    <div class="transparent-button">
+                        <img src="/Content/images/Layer_1.svg" alt="" />
+                        <span class=" d-sm-none d-lg-flex text-wrap">Monthly Publication</span>
+                    </div>
+                </a>
+                
+            <a href="/Home/DashboardGeoTag">
+                <div class=" transparent-button separator-green pe-3">
+                    <img src="/Content/images/location.svg" alt="" />
+                    <span class="d-sm-none text-wrap d-lg-flex" >Geo Tagged Dashboard</span>
+                </div>
+
+
+            </a>
+            <a  href="/Home/Login">
+                <div class="transparent-button">
+                    <img src="/Content/images/login.svg" alt="" />
+                    <span class="d-sm-none text-wrap d-lg-flex">Login</span>
+                </div>
+
+            </a>
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    </section>
+
+    <!-- Navigation Bar -->
+    <section class="nav-section d-flex">
+        <nav class="navbar navbar-expand-md navbar-dark nav-bg flex-fill w-100">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-pill me-auto flex-wrap align-content-stretch">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">About Scheme</a>
+                        <div class="dropdown-menu nav-bg">
+                            <a class="dropdown-item nav-link" href="/Home/SchemeOverview">Scheme Overview</a>
+                            <a class="dropdown-item nav-link" href="/Home/Objectives">Scheme Objective</a>
+                            <a class="dropdown-item nav-link" href="/Home/MainFeatures">Key Features</a>
+                            <a class="dropdown-item nav-link" href="/Home/FundAllocation">Fund Allocation</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Eligibility</a>
+                        <div class="dropdown-menu nav-bg">
+                            <a class="dropdown-item nav-link" href="/Home/WhoCanApply">Who Can Apply</a>
+                            <a class="dropdown-item nav-link" href="/Home/EligibleProjects">Eligible Project</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Beneficiary Corner</a>
+                        <div class="dropdown-menu nav-bg">
+                            <a class="dropdown-item nav-link" href="/Home/BeneficiaryRegistration">Register as Beneficiary</a>
+                            <a class="dropdown-item nav-link" href="/Home/RecoverBeneficiaryId">Recover Beneficiary ID</a>
+                            <a class="dropdown-item nav-link" href="/Home/BenefitsUnderOtherScheme">Convergence with Other Schemes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Lending Institutions</a>
+                        <div class="dropdown-menu nav-bg">
+                            <a class="dropdown-item nav-link" href="/Home/EligibleLendingInstitutions">Eligible Institutions</a>
+                            <a class="dropdown-item nav-link" href="/Home/InterestRate">Interest Rates</a>
+                            <a class="dropdown-item nav-link" href="/Home/Jurisdiction">Jurisdiction</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Scheme Monitoring</a>
+                        <div class="dropdown-menu nav-bg">
+                            <a class="dropdown-item nav-link" href="/Home/Dashboard">Scheme Dashboard</a>
+                            <a class="dropdown-item nav-link" href="/MISReports/SanctionedStateDistrictProjectTypeMISReport">Sanctioned State And District Wise (MIS)</a>
+                            <a class="dropdown-item nav-link" href="/Home/DashboardGeoTag">Geo-Tagged Dashboard</a>
+                            <a class="dropdown-item nav-link" href="/MISReports/GeoTagProgress">Geo-Tagged Progress (MIS)</a>
+                            
+                            <a class="dropdown-item nav-link" href="/Home/SchemeMonitoring">Monitoring Committees</a>
+                            <a class="dropdown-item nav-link" href="/Home/MISReport">MIS Report</a>
+                            <a class="dropdown-item nav-link" href="/MISReports/SanctionedLendingInstitutionLendingInstitutionBranchMISReport">Sanctioned Lending Institution Branch Wise (MIS)</a>
+                            <a class="dropdown-item nav-link" href="/MISReports/SanctionedLIStateDistrictMISReport">Sanctioned Lending Institution State Wise (MIS)</a>
+                            <a class="dropdown-item nav-link" href="/Home/FinancialYearWiseReports">Financial Year Wise (MIS)</a>
+                            <a class="dropdown-item nav-link" href="/Claim/ClaimReleaseReport">Claim Released by Ministry</a>
+                            <a class="dropdown-item nav-link" href="/MISReports/DDYMISReport">PM DDY State and District Wise Mis Report</a>
+
+
+
+
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                        <div class="dropdown-menu nav-bg">
+                            <a class="dropdown-item nav-link" href="/Content/DocAttachment/FINALSchemeGuidelinesAIF.pdf" target="_blank">Scheme SOP</a>
+                            <a class="dropdown-item nav-link" href="/Home/Circulars">Circulars</a>
+                            <a class="dropdown-item nav-link" href="/Home/CheckList">Document Checklists</a>
+
+                            <a class="dropdown-item nav-link" href="/Home/ModelDPR">DPR Samples & Templates</a>
+                            <a class="dropdown-item nav-link" href="/Home/Presentation">Presentations</a>
+                            <a class="dropdown-item nav-link" href="/Home/TutorialVideos">Video Tutorials</a>
+                            <a class="dropdown-item nav-link" href="https://play.google.com/store/apps/details?id=com.agri.krishimapper" target="_blank">Krishi Mapper App (Android)</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Assistance</a>
+                        <div class="dropdown-menu nav-bg">
+                            <a class="dropdown-item nav-link" href="/Home/FAQs">FAQs</a>
+                            <a class="dropdown-item nav-link" href="/Home/Help">Help</a>
+                            <a class="dropdown-item nav-link" href="/Home/Login">Support</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Claim/EMICalculator">Benefit Calculator</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Announcement">Announcement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Beneficiary/AIF_Feedback">AIF FeedBack</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/ContactUs">Contact Us</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Login">Login</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+        </nav>
+    </section>
+
+    <!-- Fixed-floating Social Icons -->
+    <aside class="social nav flex-column position-fixed">
+        <a class="twitter mb-2" href="https://twitter.com/AgriInfraFund">         <i class="icon-circle rounded-circle text-center fa fa-2x fa-x-twitter bg-info">  <img src="/Content/images/Twiiter_Icon.svg" class="icon-circle"></i><b class="mx-2">Twitter</b></a>
+        <a class="facebook mb-2" href="https://www.facebook.com/Agriinfrafund/">   <i class="icon-circle rounded-circle text-center fa fa-2x fa-x-facebook bg-primary"><img src="/Content/SocialMedia/Facebook.svg" class="icon-circle"></i><b class="mx-2">Facebook</b></a>
+        <a class="linkedin mb-2" href="https://www.linkedin.com/in/agriinfrafund/"><i class="icon-circle rounded-circle text-center fa fa-2x fa-x-linkedin bg-primary "><img src="/Content/SocialMedia/LinkedIn.svg" class="icon-circle"></i><b class="mx-2">LinkedIn</b></a>
+        <a class="instagram mb-2" href="https://www.instagram.com/agriinfrafund/">  <i class="icon-circle rounded-circle text-center fa fa-2x fa-x-instagram bg-danger "><img src="/Content/images/instagram_icon.png" class="icon-circle"></i><b class="mx-2">Instagram</b></a>
+        <a class="instagram mb-2" href="/Documents/Publication/9B8D48D389174463A2B61DFFD287FB64.pdf">  <i class="icon-circle rounded-circle text-center fa fa-2x fa-x-instagram bg-light border border-danger"><img src="/Content/images/Layer_1.svg" class="icon-circle p-2"></i><b class="ms-2">Publication</b></a>
+    </aside>
+    <section>
+        <div class="container-fluid ps-0 pe-0">
+            <div id="body">
+                
+                <section class="clear-fix">
+                    
+
+
+
+
+<section id="Page">
+    <div class="col-xs-12 well">
+        <div style=" padding:20px; color:red">
+            <h3>
+                Agri Infra Fund Error Page:
+            </h3>
+            <h4>
+                Sorry, The Page, You are Looking for is not found . Please contact PMU Team for help.
+            </h4>
+            <h6><a href="/">Go Back To Home Page</a></h6> 
+            <br />
+            <br />
+        </div>
+    </div>
+</section>
+
+
+                </section>
+            </div>
+        </div>
+    </section>
+    <!-- External Links (Portals, Videos, Playstore App) -->
+    <section class="links_section container-fluid">
+        <div class="row">
+            <div class="bg-line justify-content-center col-12">
+                <div class="tongue_clip">
+                    <span class="tongue_icon"><img src="/Content/images/yellow_leaf.svg"> </span>
+                    <span class="tongue_text">Related Links</span>
+                </div>
+            </div>
+            <div class="px-4 pb-2 w-100">
+                <div class="justify-content-center d-flex flex-wrap text-center align-items-center">
+                    <a class="link p-2" href="https://krishikatha.da.gov.in/en/category/agri-infra-fund/" target="_blank">
+                        <span class="tongue_icon pe-2"><img src="/Content/images/links_icon.svg"> </span>
+                        <span class="link-text pe-2 no-wrap">Krishi Katha</span>
+                    </a>
+                    <a class="link p-2" href="https://krishinivesh.gov.in/" target="_blank"
+                        <span class="tongue_icon pe-2"><img src="/Content/images/links_icon.svg"> </span>
+                        <span class="link-text pe-2 no-wrap">Krishi Nivesh Portal</span>
+                    </a>
+                    <a class="link p-2" href="/Content/video/Agri_pro_English_6.mp4" target="_blank">
+                        <span class="tongue_icon pe-2"><img src="/Content/images/video_icon.svg"> </span>
+                        <span class="link-text pe-2 no-wrap">Loan Application Process Video (English)</span>
+                    </a>
+                    <a class="link p-2" href="/Content/video/Agri_pro_Hindi_6.mp4" target="_blank">
+                        <span class="tongue_icon pe-2"><img src="/Content/images/video_icon.svg"> </span>
+                        <span class="link-text pe-2 no-wrap">Loan Application Process Video (Hindi)</span>
+                    </a>
+                </div>
+                <a class="justify-content-center d-flex " href="https://play.google.com/store/apps/details?id=com.agri.krishimapper" target="_blank">
+                    <div class="android-link rounded-pill m-1 p-2">
+
+                        <span class="tongue_icon"><img src="/Content/images/android.svg"> </span>
+                        <span class="android-text">Download Krishi Mapper</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <!-- Footer -->
+<section class="footer-section">
+    <footer class="footer flex-fill w-100">
+        <nav class="footer-nav flex-wrap">
+            <a href="/">Home</a>
+            <span class="separator">|</span>
+            <a href="/Home/Login">Support</a>
+            <span class="separator">|</span>
+            <a href="/Home/FAQs">FAQ</a>
+            <span class="separator">|</span>
+            <a href="/Home/Sitemap">Sitemap</a>
+            <span class="separator">|</span>
+            <a href="/Home/WebsitePolicies">Website Policies</a>
+            <span class="separator">|</span>
+            <a href="/Home/WebInformationManager">Web Information Manager</a>
+        </nav>
+        <hr class="mb-0"/>
+        <div class="footer-info">
+            <p class="website-belongs m-2">
+                This website belongs to and Website Content Managed by Department of Agriculture & Farmers Welfare
+            </p>
+            <p class="last-updated p-0 m-0"><span class="text-monospace"> 
+                Visitor Counter :
+                <span class="border-info border-rounded p-1">Total Visitor : 3285627
+
+</span>
+                | Today:<span class=" border-info border-rounded p-1">8254</span></span></p>
+            <p class="last-updated p-0 m-0 end"><small class="font-italic float-end align-text-bottom" text-version="8.7.0">Last updated on 10,Sept,2025</small></p>
+        </div>
+    </footer>
+</section>
+    </section>
+    <script type="text/javascript" src="/Scripts/modernizr-2.8.3.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="/Scripts/MvcGrid/mvc-grid.js"></script>
+    <script type="text/javascript" src="/Scripts/md5.js"></script>
+    <script type="text/javascript" src="/Scripts/Chart.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap-table.min.js"></script>
+    <script>
+        [].forEach.call(document.getElementsByClassName('mvc-grid'), function (element) {
+            new MvcGrid(element);
+        });
+    </script>
+
+    
+    <script>
+        $(document).ready(function () {
+            document.getElementById("increase-font").addEventListener("click", () => adjustFontSize(2));
+            document.getElementById("decrease-font").addEventListener("click", () => adjustFontSize(-2));
+            document.getElementById("reset-font").addEventListener("click", resetFontSize);
+            function adjustFontSize(change) {
+                let root = document.documentElement;
+                let currentSize = parseInt(getComputedStyle(root).getPropertyValue('--font-size'));
+                let newSize = currentSize + change;
+                root.style.setProperty('--font-size', newSize + 'px');
+            }
+            function resetFontSize() {
+                document.documentElement.style.setProperty('--font-size', '16px');
+            }
+        });
+    </script>
+    <!-- Bhashini script at end of body -->
+    <script src="https://translation-plugin.bhashini.co.in/v4/website_translation_utility.js" defer async language-icon-color="black"></script>
+</body>
+</html>

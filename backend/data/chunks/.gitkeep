@@ -1,0 +1,4 @@
+# Placeholder — JSONL chunks produced by scripts/ingest.py go here
+# Structure: data/chunks/<category>.jsonl
+# Each line: {"doc_name": ..., "url": ..., "category": ..., "page": ..., "chunk_id": ..., "text": ..., "char_count": ...}
+# This directory is git-ignored

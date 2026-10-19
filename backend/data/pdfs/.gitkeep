@@ -1,0 +1,3 @@
+# Placeholder — PDFs downloaded by scripts/download_pdfs.py go here
+# Structure: data/pdfs/<category>/<filename>.pdf
+# This directory is git-ignored (PDFs are too large for git)
