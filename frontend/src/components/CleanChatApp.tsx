@@ -861,7 +861,9 @@ export default function CleanChatApp({ initialQuery, initialCategory, onBackToHo
                   {/* Status Indicator */}
                   <div className="shrink-0 flex items-center ml-auto pl-1">
                     {att.status === 'uploading' && (
-                      <Loader2 className="w-3.5 h-3.5 animate-spin text-slate-400" title="Uploading..." />
+                      <span title="Uploading...">
+                        <Loader2 className="w-3.5 h-3.5 animate-spin text-slate-400" />
+                      </span>
                     )}
                     {att.status === 'processing' && (
                       <div className="flex items-center gap-1 text-[10px] text-saffron font-bold" title={`Processing (${Math.round(att.progress * 100)}%)`}>
@@ -870,10 +872,14 @@ export default function CleanChatApp({ initialQuery, initialCategory, onBackToHo
                       </div>
                     )}
                     {att.status === 'ready' && (
-                      <CheckCircle2 className="w-4 h-4 text-emerald-500" title="Ready for questions" />
+                      <span title="Ready for questions">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                      </span>
                     )}
                     {att.status === 'failed' && (
-                      <AlertCircle className="w-4 h-4 text-rose-500" title={att.error || 'Failed to process'} />
+                      <span title={att.error || 'Failed to process'}>
+                        <AlertCircle className="w-4 h-4 text-rose-500" />
+                      </span>
                     )}
 
                     <button
