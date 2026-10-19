@@ -1,6 +1,6 @@
 import { AskResponse, DocumentInfo } from '@/types';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://citizen-ai-backend-12xf.onrender.com';
 
 // ── Existing endpoints ───────────────────────────────────────────────────────
 

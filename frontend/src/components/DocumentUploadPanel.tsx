@@ -44,7 +44,7 @@ const CATEGORIES = [
   { value: 'finance', label: '💰 Finance', desc: 'Loans, subsidies & banking' },
 ];
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://citizen-ai-backend-12xf.onrender.com';
 
 interface DocumentUploadPanelProps {
   onGoToChat?: (query?: string) => void;
