@@ -33,7 +33,6 @@ data/pdfs/
 data/chunks/
 data/golden_set.jsonl
 data/finetune/
-backend/chroma_db/
 *.bin
 *.safetensors
 *.gguf

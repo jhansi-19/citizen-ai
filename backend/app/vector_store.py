@@ -40,7 +40,7 @@ class VectorStore:
         """Returns total number of chunks currently indexed."""
         return self.collection.count()
 
-    def build_from_jsonl(self, jsonl_path: Path, batch_size: int = 64) -> int:
+    def build_from_jsonl(self, jsonl_path: Path, batch_size: int = 16) -> int:
         """
         Indexes all chunk records from all_chunks.jsonl into Chroma.
         Re-indexing performs an upsert by chunk_id.
@@ -60,6 +60,7 @@ class VectorStore:
         total = len(records)
         logger.info(f"Indexing {total} chunks into Chroma collection '{self.collection_name}'...")
 
+        import gc
         for i in range(0, total, batch_size):
             batch = records[i:i + batch_size]
             ids = [r["chunk_id"] for r in batch]
@@ -79,6 +80,7 @@ class VectorStore:
                 documents=documents,
                 metadatas=metadatas
             )
+            gc.collect()
             logger.info(f"Indexed batch [{min(i + batch_size, total):,}/{total:,}]")
 
         indexed_count = self.collection.count()
