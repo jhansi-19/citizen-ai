@@ -151,6 +151,14 @@ async def lifespan(app: FastAPI):
     # Sync any uploaded PDFs/chunks into canonical storage
     sync_canonical_data()
 
+    # Limit PyTorch CPU threads to reduce memory allocation footprint (~40 MB saved)
+    try:
+        import torch
+        torch.set_num_threads(1)
+        torch.set_num_interop_threads(1)
+    except Exception:
+        pass
+
     # If ChromaDB is empty on cold start (e.g. fresh container deploy), populate it from all_chunks.jsonl
     try:
         from app.vector_store import vector_store
@@ -162,6 +170,10 @@ async def lifespan(app: FastAPI):
         init_bm25()
     except Exception as ie:
         logger.warning(f"Chroma/BM25 cold-start build note: {ie}")
+
+    # Explicit garbage collection to free temporary model loading buffers (~60 MB saved)
+    import gc
+    gc.collect()
 
     # Start periodic attachment cleanup
     import threading
